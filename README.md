@@ -23,3 +23,6 @@ Introducing hardstuck.gg. The application for getting the best builds for your c
 
 ## Approach Taken
 ![ERD](https://user-images.githubusercontent.com/104323108/173128909-b9d3dad5-254d-470b-860e-9fa802290481.png)
+![PROFILE WIRE](https://user-images.githubusercontent.com/104323108/173150289-e8f83d9c-ab45-4153-9aac-f5a4b32a1219.png)
+![NEW BUILD WIRE](https://user-images.githubusercontent.com/104323108/173150298-9fa5010a-30f2-41e5-90d7-1f653b26b60f.png)
+![BUILDS WIRE](https://user-images.githubusercontent.com/104323108/173150307-5e20a274-821a-4197-aed4-fb07595a17b4.png)
