@@ -1,10 +1,9 @@
-# League-of-Legends-Build-Guide
+# League of Legends Custom Builds
 
 # Link to site - 
 
 ## Overview
-Are you stuck in Bronze...? We can help. Don't know what to build... We can help! Want the best build for your champion... WE CAN HELP!
-Introducing hardstuck.gg. The application for getting the best builds for your champion. Tell us your champion and we'll tell you what build to go. 
+Are you stuck in Bronze...? We can help. Introducing League of Legends Custom Builds. The application for getting the best builds for your champion. Tell us your champion and customize your build. Create custom builds for your favorite multi-player-online battle-arena... League of Legends!
 
 ## User Story
 - I want to see all champions
