@@ -22,3 +22,4 @@ Introducing hardstuck.gg. The application for getting the best builds for your c
 - MongoDB
 
 ## Approach Taken
+![ERD](https://user-images.githubusercontent.com/104323108/173128909-b9d3dad5-254d-470b-860e-9fa802290481.png)
