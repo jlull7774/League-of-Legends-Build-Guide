@@ -4,7 +4,10 @@
   "description": "Are you stuck in Bronze...? We can help. Introducing League of Legends Custom Builds. The application for getting the best builds for your champion. Tell us your champion and customize your build. Create custom builds for your favorite multi-player-online battle-arena... League of Legends!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node models/seed.js"
   },
   "repository": {
     "type": "git",
