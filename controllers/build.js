@@ -28,12 +28,12 @@ router.use((req, res, next) => {
 // index route
 
 router.get("/", (req, res) => {
-  // find all the builds
+  // find all the build
   Build.find({ username: req.session.username })
     // render the template after they are found
-    .then((builds) => {
-      console.log(builds)
-      res.render("builds/index.liquid", { builds })
+    .then((build) => {
+      console.log(build)
+      res.render("builds/index.liquid", { build })
     })
     .catch((error) => {
       console.log(error)
@@ -88,13 +88,11 @@ router.put("/:id", (req, res) => {
 // create route
 
 router.post("/", (req, res) => {
-  // check if the readyToEat property should be true or false
-  req.body.readyToEat = req.body.readyToEat === "on" ? true : false
   // add user to req.body to track related user
   req.body.username = req.session.username
   // create the new build
   Build.create(req.body)
-    .then((builds) => {
+    .then((build) => {
       // redirect user to index page if successfully created item
       res.redirect("/builds")
     })
