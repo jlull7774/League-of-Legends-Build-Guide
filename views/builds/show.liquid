@@ -2,13 +2,14 @@
 <div>
   <article>
     <h2>
-      {{ build.name }}
-      {{ build.item1 }}
-      {{ build.boots }}
-      {{ build.item3 }}
-      {{ build.item4 }}
-      {{ build.item5 }}
-      {{ build.item6 }}
+      {{ build.name }} <br>
+      <br>
+      Mythic Item - {{ build.item1 }} <br>
+      Boots - {{ build.boots }} <br>
+      Item 3 - {{ build.item3 }} <br>
+      Item 4 - {{ build.item4 }} <br>
+      Item 5 - {{ build.item5 }} <br>
+      Item 6 - {{ build.item6 }} <br>
     </h2>
     <a href="/builds/{{ build._id }}/edit"><button>Edit Build</button></a>
     <form action="/builds/{{ build._id }}?_method=DELETE" method="POST">
