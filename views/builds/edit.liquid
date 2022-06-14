@@ -1,0 +1,66 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+  <form action="/fruits/{{ build._id }}?_method=PUT" method="post">
+    <fieldset>
+      <legend>Edit {{ build.name }}</legend>
+      <label>
+        NAME:<input
+          type="text"
+          name="name"
+          placeholder="enter build name"
+          value="{{ build.name }}"
+        />
+      </label>
+      <label>
+        Mythic Item:<input
+          type="text"
+          name="ITEMS"
+          placeholder="enter build name"
+          value="{{ build.item1 }}"
+        />
+      </label>
+      <label>
+        Boots:<input
+          type="text"
+          name="ITEMS"
+          placeholder="enter build name"
+          value="{{ build.boots }}"
+        />
+      </label>
+      <label>
+        Item 3:<input
+          type="text"
+          name="ITEMS"
+          placeholder="enter build name"
+          value="{{ build.item3 }}"
+        />
+      </label>
+      <label>
+        Item 4:<input
+          type="text"
+          name="ITEMS"
+          placeholder="enter build name"
+          value="{{ build.item4 }}"
+        />
+      </label>
+      <label>
+        Item 5:<input
+          type="text"
+          name="ITEMS"
+          placeholder="enter build name"
+          value="{{ build.item5 }}"
+        />
+      </label>
+      <label>
+        Item 6:<input
+          type="text"
+          name="ITEMS"
+          placeholder="enter build name"
+          value="{{ build.item6 }}"
+        />
+      </label>
+    </fieldset>
+    <input type="submit" value="Edit {{ build.name }}" />
+  </form>
+</div>
+{% endblock %}
