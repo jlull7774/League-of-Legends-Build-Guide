@@ -70,8 +70,7 @@ router.delete("/:id", (req, res) => {
 router.put("/:id", (req, res) => {
   // get the id from params
   const id = req.params.id.toString().trim()
-  // check if the readyToEat property should be true or false
-  req.body.readyToEat = req.body.readyToEat === "on" ? true : false
+  
   // update the build
   Build.findByIdAndUpdate(id, req.body, { new: true })
     .then((build) => {

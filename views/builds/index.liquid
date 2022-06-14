@@ -3,9 +3,13 @@
   <a href="/builds/new"><button>Create A New Build</button></a>
   <a href="/users/logout"><button>Logout</button></a>
 
-  {% for build in builds %}
+  {% for build in build %}
   <article>
-    <a href="/builds/{{ build.name }}"> </a>
+    <a href="/builds/{{ build._id }}"> 
+      <h2>
+        {{ build.name }}
+      </h2>
+    </a>
   </article>
   {% endfor %}
 </div>

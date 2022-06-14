@@ -2,15 +2,19 @@
 <div>
   <article>
     <h2>
-      {{ build.name }} - {% if readyToEat == true %} Ready to Eat {% else %} Not
-      Ready to Eat {% endif %}
+      {{ build.name }}
+      {{ build.item1 }}
+      {{ build.boots }}
+      {{ build.item3 }}
+      {{ build.item4 }}
+      {{ build.item5 }}
+      {{ build.item6 }}
     </h2>
-    <h3>{{ build.color }}</h3>
-    <a href="/builds/{{ build._id }}/edit"><button>Edit</button></a>
+    <a href="/builds/{{ build._id }}/edit"><button>Edit Build</button></a>
     <form action="/builds/{{ build._id }}?_method=DELETE" method="POST">
       <input type="submit" value="Delete" />
     </form>
-    <a href="/builds/"><button>Home</button></a>
+    <a href="/builds/"><button>Back to Main</button></a>
   </article>
 </div>
 {% endblock %}
