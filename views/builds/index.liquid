@@ -1,0 +1,12 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+  <a href="/builds/new"><button>Create A New Build</button></a>
+  <a href="/users/logout"><button>Logout</button></a>
+
+  {% for build in builds %}
+  <article>
+    <a href="/builds/{{ builds._id }}"> </a>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}
