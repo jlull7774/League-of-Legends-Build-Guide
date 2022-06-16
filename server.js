@@ -12,6 +12,7 @@ const UserRouter = require("./controllers/users")
 const session = require("express-session")
 const MongoStore = require("connect-mongo")
 
+
 /////////////////////////////////////////////////
 // Create our Express Application Object
 /////////////////////////////////////////////////
@@ -52,3 +53,4 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT
 app.listen(PORT, () => console.log(`Now Listening on port ${PORT}`))
 app.listen(process.env.PORT || 3000)
+
