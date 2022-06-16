@@ -91,6 +91,15 @@ db.on("open", () => {
       item5: "Serpent's Feng",
       item6: "Ravenous Hydra",
     },
+    {
+      name: "Critz-Crank",
+      item1: "Galeforce",
+      boots: "Berserkers Greaves",
+      item3: "Essence Reaver",
+      item4: "Infinity Edge",
+      item5: "The Collector",
+      item6: "Lord Dominik's Regards",
+    },
   ]
 
   // Delete all builds
