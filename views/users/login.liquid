@@ -1,16 +1,19 @@
 {% layout "layout.liquid" %}
 {% block content %}
-      <div>
+      <div class="d-flex justify-content-center">
         <form action="/users/login" method="post">
           <fieldset>
-            <legend>User Login</legend>
+            <legend class="d-flex justify-content-center">User Login</legend>
             <label
-              >USERNAME: <input type="text" name="username" required />
+              >USERNAME: <input type="text" name="username" required class="d-flex justify-content-center"/>
             </label>
+            <br>
             <label
-              >PASSWORD: <input type="password" name="password" required />
+              >PASSWORD: <br><input type="password" name="password" required />
+              <br>
             </label>
-            <input type="submit" value="Login" />
+            <br>
+            <input type="submit" value="Login" class="d-flex justify-content-center" />
           </fieldset>
         </form>
       </div>
