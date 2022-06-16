@@ -2,32 +2,28 @@
 <div>
   <article>
     <h2 class="d-flex justify-content-center">
-      {{ build.name }} <br>
-      <br>
-      Mythic Item - {{ build.item1 }} <br>
-      Boots - {{ build.boots }} <br>
-      Item 3 - {{ build.item3 }} <br>
-      Item 4 - {{ build.item4 }} <br>
-      Item 5 - {{ build.item5 }} <br>
-      Item 6 - {{ build.item6 }} <br>
+      {{ build.name }} <br />
+      <br />
+      Mythic Item - {{ build.item1 }} <br />
+      Boots - {{ build.boots }} <br />
+      Item 3 - {{ build.item3 }} <br />
+      Item 4 - {{ build.item4 }} <br />
+      Item 5 - {{ build.item5 }} <br />
+      Item 6 - {{ build.item6 }} <br />
     </h2>
-    <br>
-    <br>
-    <div class="d-flex justify-content-center">
-      <br>
-      <br>
-    <a href="/builds/{{ build._id }}/edit">
-      <br>
-      <br><button>Edit Build</button></a>
-    <form action="/builds/{{ build._id }}?_method=DELETE" method="POST">
-      <input type="submit" value="Delete" />
-    </form>
-    <br>
-      <br>
-    <a href="/builds/"><button>Back to Main</button></a>
-    <br>
-      <br>
-  </div>
+    <br />
+    <br />
+    <div>
+      <a href="/builds/{{ build._id }}/edit">
+        <br /><button>Edit Build</button></a
+      >
+
+      <form action="/builds/{{ build._id }}?_method=DELETE" method="POST">
+        <input type="submit" value="Delete" />
+      </form>
+
+      <a href="/builds/"><button>Back to Main</button></a>
+    </div>
   </article>
 </div>
 {% endblock %}
