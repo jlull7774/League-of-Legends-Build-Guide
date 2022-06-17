@@ -1,6 +1,6 @@
 # League of Legends Custom Builds
 
-# Link to site - https://lol-beginner-build-guides.herokuapp.com/
+# Link to site - [https://lol-beginner-build-guides.herokuapp.com/]
 
 ## Overview
 Are you stuck in Bronze...? We can help. Introducing League of Legends Custom Builds. The application for getting the best builds for your champion. Tell us your champion and customize your build. Create custom builds for your favorite multi-player-online battle-arena... League of Legends!
