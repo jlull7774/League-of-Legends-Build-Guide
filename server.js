@@ -18,7 +18,7 @@ const MongoStore = require("connect-mongo")
 const app = require("liquid-express-views")(express(), {
   root: [path.resolve(__dirname, "views/")],
 })
-const rowdy = require('rowdy-logger')
+const rowdy = require("rowdy-logger")
 const routesReport = rowdy.begin(app)
 /////////////////////////////////////////////////////
 // Middleware
@@ -36,7 +36,20 @@ app.use(
     resave: false,
   })
 )
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
 
+mongoose.connection.on("connected", () => {
+  console.log(
+    `Mongoose connected to ${mongoose.connection.host}:${mongoose.connection.port}`
+  )
+})
+
+mongoose.connection.on("error", (err) => {
+  console.log("Could not connect to MongoDB!", err)
+})
 ////////////////////////////////////////////
 /////////////////Routes/////////////////////
 ////////////////////////////////////////////
@@ -47,8 +60,7 @@ app.get("/", (req, res) => {
   res.render("index.liquid")
 })
 
-
-app.listen(3000, () => {
+app.listen(4000, () => {
   console.log("listening on port 3000!")
   routesReport.print()
 })
