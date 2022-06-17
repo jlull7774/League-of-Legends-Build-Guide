@@ -13,16 +13,14 @@
     </h2>
     <br />
     <br />
-    <div>
-      <a href="/builds/{{ build._id }}/edit">
-        <br /><button>Edit Build</button></a
-      >
+    <div class="d-flex justify-content-center">
+      <a href="/builds/{{ build._id }}/edit" class="text-decoration-none"> <button class="border border-dark mx-2">Edit Build</button></a>
 
       <form action="/builds/{{ build._id }}?_method=DELETE" method="POST">
-        <input type="submit" value="Delete" />
+        <input type="submit" value="Delete" class="mx-2 border border-dark"/>
       </form>
 
-      <a href="/builds/"><button>Back to Main</button></a>
+      <a href="/builds/" class="text-decoration-none "><button class="border border-dark mx-2">Back to Main</button></a>
     </div>
   </article>
 </div>

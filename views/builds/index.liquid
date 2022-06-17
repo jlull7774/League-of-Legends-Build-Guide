@@ -1,12 +1,12 @@
 {% layout "layout.liquid" %} {% block content %}
 <div class="d-flex flex-column justify-content-center">
-  <a href="/builds/new" class="d-inline-flex justify-content-center"><button>Create A New Build</button></a>
+  <a href="/builds/new" class="d-flex justify-content-center text-decoration-none"><button>Create A New Build</button></a>
   <br>
   
 
   {% for build in build %}
   <article class="d-inline-flex justify-content-center">
-    <a href="/builds/{{ build._id }}"> 
+    <a href="/builds/{{ build._id }}" class="text-decoration-none"> 
       <h2>
         {{ build.name }}
       </h2>
@@ -14,6 +14,6 @@
   </article>
   {% endfor %}
   <br>
-  <a href="/users/logout" class="d-inline-flex justify-content-center"><button>Logout</button></a>
+  <a href="/users/logout" class="d-inline-flex justify-content-center text-decoration-none"><button>Logout</button></a>
 </div>
 {% endblock %}

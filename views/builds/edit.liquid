@@ -1,9 +1,9 @@
 {% layout "layout.liquid" %} {% block content %}
-<div>
+<div class="d-flex justify-content-center">
   <form action="/builds/{{ build._id }}?_method=PUT" method="post">
-    <fieldset>
-      <legend>Edit {{ build.name }}</legend>
-      <label>
+    <fieldset >
+      <legend >Edit {{ build.name }}</legend>
+      <label >
         NAME:<input
           type="text"
           name="name"
@@ -11,6 +11,7 @@
           value="{{ build.name }}"
         />
       </label>
+      <br>
       <label>
         Mythic Item:<input
           type="text"
@@ -19,6 +20,7 @@
           value="{{ build.item1 }}"
         />
       </label>
+      <br>
       <label>
         Boots:<input
           type="text"
@@ -27,6 +29,7 @@
           value="{{ build.boots }}"
         />
       </label>
+      <br>
       <label>
         Item 3:<input
           type="text"
@@ -35,6 +38,7 @@
           value="{{ build.item3 }}"
         />
       </label>
+      <br>
       <label>
         Item 4:<input
           type="text"
@@ -43,6 +47,7 @@
           value="{{ build.item4 }}"
         />
       </label>
+      <br>
       <label>
         Item 5:<input
           type="text"
@@ -51,6 +56,7 @@
           value="{{ build.item5 }}"
         />
       </label>
+      <br>
       <label>
         Item 6:<input
           type="text"
