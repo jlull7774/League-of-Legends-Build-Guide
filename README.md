@@ -29,31 +29,5 @@ Are you stuck in Bronze...? We can help. Introducing League of Legends Custom Bu
 ![NEW BUILD WIRE](https://user-images.githubusercontent.com/104323108/173150298-9fa5010a-30f2-41e5-90d7-1f653b26b60f.png)
 # BUILDS WIRE
 ![BUILDS WIRE](https://user-images.githubusercontent.com/104323108/173150307-5e20a274-821a-4197-aed4-fb07595a17b4.png)
-# ┌────────┬──────────────────┐
-│ Method │ Path             │
-├────────┼──────────────────┤
-│ GET    │ /builds          │
-├────────┼──────────────────┤
-│ GET    │ /builds/new      │
-├────────┼──────────────────┤
-│ DELETE │ /builds/:id      │
-├────────┼──────────────────┤
-│ PUT    │ /builds/:id      │
-├────────┼──────────────────┤
-│ POST   │ /builds          │
-├────────┼──────────────────┤
-│ GET    │ /builds/:id/edit │
-├────────┼──────────────────┤
-│ GET    │ /builds/:id      │
-├────────┼──────────────────┤
-│ GET    │ /users/signup    │
-├────────┼──────────────────┤
-│ POST   │ /users/signup    │
-├────────┼──────────────────┤
-│ GET    │ /users/login     │
-├────────┼──────────────────┤
-│ POST   │ /users/login     │
-├────────┼──────────────────┤
-│ GET    │ /users/logout    │
-├────────┼──────────────────┤
-│ GET    │ /    
+
+![image](https://user-images.githubusercontent.com/104323108/174352292-f9bfc7f1-f918-40fe-a100-c009adfb5ede.png)
