@@ -10,6 +10,7 @@ const path = require("path")
 const BuildRouter = require("./controllers/build")
 const UserRouter = require("./controllers/users")
 const session = require("express-session")
+const mongoose = require("mongoose")
 const MongoStore = require("connect-mongo")
 
 /////////////////////////////////////////////////
@@ -60,10 +61,7 @@ app.get("/", (req, res) => {
   res.render("index.liquid")
 })
 
-app.listen(4000, () => {
-  console.log("listening on port 3000!")
-  routesReport.print()
-})
+
 //////////////////////////////////////////////
 // Server Listener
 //////////////////////////////////////////////
