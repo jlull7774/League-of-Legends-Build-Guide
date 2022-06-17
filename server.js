@@ -12,14 +12,14 @@ const UserRouter = require("./controllers/users")
 const session = require("express-session")
 const MongoStore = require("connect-mongo")
 
-
 /////////////////////////////////////////////////
 // Create our Express Application Object
 /////////////////////////////////////////////////
 const app = require("liquid-express-views")(express(), {
   root: [path.resolve(__dirname, "views/")],
 })
-
+const rowdy = require('rowdy-logger')
+const routesReport = rowdy.begin(app)
 /////////////////////////////////////////////////////
 // Middleware
 /////////////////////////////////////////////////////
@@ -47,10 +47,11 @@ app.get("/", (req, res) => {
   res.render("index.liquid")
 })
 
+
+app.listen(3000, () => {
+  console.log("listening on port 3000!")
+  routesReport.print()
+})
 //////////////////////////////////////////////
 // Server Listener
 //////////////////////////////////////////////
-const PORT = process.env.PORT
-
-app.listen(process.env.PORT || 3000)
-
